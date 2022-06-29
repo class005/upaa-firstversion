@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UPAA Francisco Morato</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="src/style.css">
+  <script src="https://unpkg.com/axios@0.21.4/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <a class="navbar-brand" href="#"> <img src="/home/anderson/Área de Trabalho/UPAA/src/img/logo.jpeg" alt="..."></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <ul class="navbar-nav">
+        <li><a class="nav-link active" href="#">HOME <span class="sr-only">(current)</span></a></li>
+        <li><a class="nav-link" href="#adocoes">ADOTE</a></li>
+        <li><a class="nav-link" href="#apadrinhe">APADRINHE</a></li>
+        <li><a class="nav-link" data-toggle="modal" data-target="#apoie-modal" href="#">APOIE</a></li>
+        <li><a class="nav-link" href="#quem-somos">QUEM SOMOS</a></li>
+        <li><a class="nav-link" href="#acessibilidade">ACESSIBILIDADE</a></li>
+        <li><a class="nav-link" href="#contato">CONTATOS</a></li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+
+  <main>
+    <div id="carouselExampleIndicators" class="carousel slide" data-interval="3000" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="src/img/acessibilidade.png" class="d-block w-100 imagem-carrossel" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://s3.amazonaws.com/assets.apoia.se/campaigns/5cf0908cb6052b6219e9028c%7Ccould-not-find-campaign/user-campaign-about-desc%7Capoie%20apoia-se-20190601_21081042.png" class="d-block w-100 imagem-carrossel" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://s2.glbimg.com/m77_O4PEVMknYMLNEEroynv3y6o=/0x56:1280x965/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/C/n/tvnHSJQFumY6kW9s3nkA/thumbnail-af-on-jurupis-evento-adote-28ago-post.jpg" class="d-block w-100 imagem-carrossel" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+
+    <h1 class="titulo pt-4">Adote ou apadrinhe um dos nossos pets!</h1>
+    <p class="text-center text-black-50">Você pode colaborar de mais de uma forma!</p>
+
+    <p class="text-center text-black-50">Além de adotar ou apadrinhar os animais, você pode realizar doações esporádicas via PIX (11-94497-1953)</p>
+    <p class="text-center text-black-50 pb-4">Ou ainda doar suas notas fiscais pra Instituição</p>
+
+    <section class="container"  id="adocoes">
+      <div class="row justify-content-center">
+        <article class="card borda-cor-especial card-largura p-o m-4 col-12 col-md-4">
+          <img class="card-img-top card-posicao-imagem" src="https://blog.caoequilibrado.com/wp-content/uploads/2020/04/como-frear-a-agressividade-do-meu-cao-parte-2-700x365.jpg/100px180/" alt="cachorrinho vira lata de nome Sorriso, preto de porte pequeno e mostrando os dentes">
+            <div class="card-body">
+              <h5 class="card-title" id="adocoes_titulo"></h5>
+              <p class="card-text" id="adocoes_descricao"></p>
+              <a href="/home/anderson/Documentos/UPAA/teste.html" class="btn btn-primary">Tenho Interesse</a>
+          </div>
+        </article>
+
+        <article class="card borda-cor-especial card-largura p-o m-4 col-12 col-md-4">
+          <img class="card-img-top card-posicao-imagem" src="https://blog.caoequilibrado.com/wp-content/uploads/2021/05/white-labrador-dog-lying-on-floor-in-cozy-home-7PKKDWZ-750x365.jpg/100px180/" alt="cachorro branco, de nome 220 e porte grande, deitado na sala sonelentamente">
+            <div class="card-body">
+              <h5 class="card-title">220</h5>
+              <p class="card-text">Se você procura um cachorro manso, mas que está sempre atento pra te proteger, o 220V é perfeito</p>
+              <a href="#" class="btn btn-primary">Tenho Interesse</a>
+          </div>
+        </article>
+
+        <article class="card borda-cor-especial card-largura p-o m-4 col-12 col-md-4">
+          <img class="card-img-top card-posicao-imagem" src="/home/anderson/Área de Trabalho/UPAA/src/img/Imagem_gorda.jpeg" alt="cachorro de porte grande, vira-lata">
+            <div class="card-body">
+              <h5 class="card-title">Gorda</h5>
+              <p class="card-text">Cadela dócio e brincalhona, ideal para quem deseja um pet para crianças, a gorda vai divertir a familia toda</p>
+              <a href="#" class="btn btn-primary">Tenho Interesse</a>
+          </div>
+        </article>
+
+        <article class="card borda-cor-especial card-largura p-o m-4 col-12 col-md-4">
+          <img class="card-img-top card-posicao-imagem" src="/home/anderson/Área de Trabalho/UPAA/src/img/Imagem_gorda.jpeg" alt="cachorro de porte grande, vira-lata">
+            <div class="card-body">
+              <h5 class="card-title">220</h5>
+              <p class="card-text">Se você procura um cachorro manso, mas que está sempre atento pra te proteger, o 220V é perfeito</p>
+              <a href="#" class="btn btn-primary">Tenho Interesse</a>
+          </div>
+
+        </article><article class="card borda-cor-especial card-largura p-o m-4 col-12 col-md-4">
+          <img class="card-img-top card-posicao-imagem" src="https://firebasestorage.googleapis.com/v0/b/upaa-55b4e.appspot.com/o/Imagem_maikinho.jpeg?alt=media&token=20c0cbb2-b8f1-4602-8479-c961ebfd997d" alt="cachorro de porte grande, vira-lata">
+            <div class="card-body">
+              <h5 class="card-title">220</h5>
+              <p class="card-text">Se você procura um cachorro manso, mas que está sempre atento pra te proteger, o 220V é perfeito</p>
+              <a href="#" class="btn btn-primary">Tenho Interesse</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="apadrinhe">
+      <h1 class="titulo pt-4">Colabore apadrinhando um de nossos caẽs</h1>
+      <p>Muitos apaixonados por cães querem fazer algo e não sabem como ajudar, às vezes já possuem muitos cães em casa, não tem mais espaço, ou não podem adotar cães, pois o restante da família não está de acordo.</p>
+      <p>Se você se identificou, saiba que pode apadrinhar cães e ser madrinhas e padrinhos de cães em nosso abrigo.</p>
+      <p><strong>O apadrinhamento é fundamental porque infelizmente, alguns cães raramente são adotados.</strong></p>
+      <p>Nosso abrigo deveria ser um lar temporário para cães que sofreram até que encontrem um lar amoroso, infelizmente muitos cães nunca são adotados, seja por ter alguma doença, deficiencia ou ser mais velho, já que as pessoas tem grande preferência por filhotes. Existe ainda o preconceito com algumas raças ou pela falta de uma.</p>
+      <p>O apadrinhamento nos ajuda a dar uma vida mais digna para esses cães e até a sensibilizar as pessoas para enxergar o quanto cães nas condições citadas acima também são animais adoráveis e maravilhosos.</p>
+      <p class="lead">Se você deseja apadrinhar um dos nossos cães, por favor nos contate através de qualquer um dos nossos canais <a href="#">clicando aqui</a></p>
+      <h2 class="titulo pt-1">Ainda não se convenceu? Conheça dois motivos para apadrinhar</h2>
+      <ul class="list-inline">
+        <li class="list-inline-item"><strong>Quer ajudar, mas não pode adotar</strong></li>
+          <p>O apadrinhamento pet é uma bela opção para quem ainda não pode ter um pet em casa ou não consegue aumentar a família no momento, mas morre de vontade de ajudar ONGs que atuam na área de proteção animal. </p>
+          <p>Com um pequeno valor mensal, você pode ser a dinda ou o dindo de um peludinho que ainda não encontrou uma família. Além disso você pode visitar, para poder ver e brincar com o bichinho quando quiser.</p>
+        <li class="list-inline-item"><strong>Ajuda a fechar as contas</strong></li>
+          <p>Se você tem ou já teve um pet sabe que há custos com alimentação, higiene, medicação e também com procedimentos veterinários. Agora imagine nosso abrigo que cuida de diversos Pets e precisa multiplicar esses custos mensalmente, sendo que não temos receita fixa ou ajuda do gover, mantemos a atividade com recursos próprios e com ajuda de pessoas como você, que sentem-se tocadas pela causa animal. Difícil, né?</p>
+          <p>Por isso que cada apadrinhamento significa uma receita muito importante para suprir os custos fixos que possuimos todos os meses e ajuda a dar conta dos imprevistos que podem acontecer: como a compra de antipulgas ou algum medicamento de emergência.</p>          
+          <p>Sabendo melhor qual valor conseguiremos contar todo mês, ficamos menos dependentes de doações esporádicas e podemos nos planejar e cuidar ainda melhor dos bichinhos.  Mais pets felizes e saudáveis</p>          
+      </ul>
+      <p class="lead">Nosso objetivo é tornar pets mais felizes e saudáveis, e se você compartilha isso com a gente, <a href="#">apadrinhe um pet.</a></p>
+
+      <p>Com esse gesto de amor e solidariedade você fortalece o trabalho de quem cuida dos animais desamparados e contribui para que mais pets abandonados possam ser acolhidos até encontrarem alguém disposto a cuidar deles com todo amor e carinho que eles merecem.</p>
+
+    </section>
+
+    <section id="quem-somos">
+      <h1 class="titulo pt-4">Conheça nosso trabalho</h1>
+      <p class="text-center text-black-50">A UPPA atua desde 2012 na causa animal, adotando animais no municipio</p>
+      Somos uma equipe de resgate de cães de rua. Nosso canil tem sede própria em Francisco Morato, no bairro Vassouras 2. 
+      Trata-se de trabalho voluntario na causa animal. Vivemos de doações e apoio. Se quiser ajudar pode apadrinhar animais resgatados enviando remédios, ração etc ou fazendo uma doação pra que possamos manter a Upaa funcionando. <br>
+      Nesse reportagem abaixo, você pode conhecer um pouco mais do nosso trabalho e da sua relevancia para o municipio.
+        
+        <div class="container-video">
+          <div class="col">
+
+            <div class="embed">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/K5XZmiLaL0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="acessibilidade">
+      <h1 class="titulo pt-4">Recursos de Acessibilidade</h1>
+        <p class="text-center text-black-50">As páginas desse site foram projetadas para serem acessíveis e facilmente utilizáveis. As dicas e instruções a seguir podem facilitar a sua navegação.</p>
+        <h5>Teclas de Atalho</h5>
+        <p>Utilize as teclas de atalho para ir diretamente a alguns pontos do Portal. Os atalhos são acionados pela combinação de duas ou mais teclas. As teclas de atalho dependem do sistema operacional (Microsoft Windows, Mac OS, Linux, DOS etc.) e do navegador (Internet Explorer, Google Chrome, Mozilla Firefox, Safari etc.) que você usa. Procure manter-se atualizado quanto à configuração do seu computador, caso as recomendações feitas nesta página não funcionem.</p>
+        <p>As configurações mais comuns são:</p>
+        <ul>
+          <li>
+            <span>a tecla</span>
+            <strong>ALT</strong>
+            <span>para os navegadores Internet Explorer, Google Chrome e Safari em um computador Microsoft Windows.</span>
+          </li>
+          <li>
+            <span>a tecla</span>
+            <strong>COMMAND</strong>
+            <span>simultaneamente, para o navegador Mozilla Firefox em um computador Microsoft Windows ou Linux</span>
+          </li>
+          <li>
+            <span>a tecla</span>
+            <strong>SHIFT e ALT</strong>
+            <span>para o sistema operacional Mac OS</span>         
+          </li>
+        </ul>
+
+        <P>Mantendo essas teclas pressionadas, digite também um dos seguintes números para ir direto ao ponto (não utilize o teclado numérico, geralmente à direita do seu teclado):</P>
+        <ul>
+          <li>
+            <span>tecla</span>
+            <strong>1</strong>
+            <span>Página inicial do Portal</span>
+          </li>
+          <li>
+            <span>tecla</span>
+            <strong>2</strong>
+            <span>Conteúdo principal da página corrente</span>
+          </li>
+          <li>
+            <span>tecla</span>
+            <strong>3</strong>
+            <span>Mapa das principais sessões do Portal</span>       
+          </li>
+          <li>
+            <span>tecla</span>
+            <strong>4</strong>
+            <span>Campo de busca geral do Portal</span>       
+          </li>
+          <li>
+            <span>tecla</span>
+            <strong>6</strong>
+            <span>Navegação da sessão corrente do Portal, se houver</span>       
+          </li>          
+        </ul>
+    <H5>Tamanho do texto</H5>
+    <p>Na parte superior central de cada página do Portal, há dois ícones que, ao serem acionados, permitem mostrar o texto em tamanho aumentado (ícone "+A") ou retornar ao tamanho original (ícone "A").</p>
+    <p>Entretanto, nos navegadores mais modernos, geralmente existe uma ferramenta de zoom (ampliação ou redução), que é um método mais eficaz, rápido e agradável de obter textos e imagens no tamanho desejado.</p>
+    <p>Para usar o zoom no Microsoft Windows ou no Linux:</p>
+    <ul>
+      <li>
+        <span>pressione a tecla
+        <strong>CTRL</strong>
+        <span>e digite a tecla</span>
+        <strong>+ (mais)</strong>
+        para aumentar
+        </span>
+      </li>
+      <li>
+        <span>pressione a tecla
+        <strong>CTRL</strong>
+        <span>e digite a tecla</span>
+        <strong>- (menos)</strong>
+        para diminuir
+        </span>
+      </li>
+      <li>
+        <span>pressione a tecla
+        <strong>CTRL</strong>
+        <span>e digite a tecla</span>
+        <strong>0 (zero)</strong>
+        para restaurar o tamanho original da página
+        </span>
+      </li>
+                   
+    </ul>
+
+    <p>Para usar o zoom no Mac OS:</p>
+    <ul>
+      <li>
+        <span>pressione a tecla
+        <strong>COMMAND</strong>
+        <span>e digite a tecla</span>
+        <strong>+ (mais)</strong>
+        para aumentar
+        </span>
+      </li>
+      <li>
+        <span>pressione a tecla
+        <strong>COMMAND</strong>
+        <span>e digite a tecla</span>
+        <strong>- (menos)</strong>
+        para diminuir
+        </span>
+      </li>
+      <li>
+        <span>pressione a tecla
+        <strong>COMMAND</strong>
+        <span>e digite a tecla</span>
+        <strong>0 (zero)</strong>
+        para restaurar o tamanho original da página
+        </span>
+      </li>                   
+    </ul>
+
+    <h5>Ferramentas úteis nos navegadores</h5>
+    <p>Alguns navegadores oferecem ferramentas acessórias (chamadas de extensões ou complementos) para potencializar seu uso. Muitas delas visam a aprimorar a acessibilidade. Aqui vai uma lista de ferramentas que podem ser obtidas para melhorar a sua experiência, com detalhes de onde obtê-las e como instalá-las. As instruções para configuração de algumas dessas ferramentas estão em inglês.</p>
+    <p>Usando o Google Chrome:</p>
+
+    <ul>
+      <li>
+        Para <strong>efeito de aumento e diminuição do texto</strong>
+        , entre na
+        <a href="https://chrome.google.com/webstore/detail/zoom/lajondecmobodlejlcjllhojikagldgd?hl=pt-BR">página da ferramenta Zoom</a>
+        e clique nos botões "GRATUITO" e, em seguida, "Adicionar". O ícone da ferramenta Zoom aparecerá na barra de ferramentas do navegador. Para fazer a configuração desejada, clique no ícone do menu do Google Chrome, localizado no canto superior direito da tela, entre em Ferramentas, Extensões, Zoom e Opções.
+      </li>
+      <li>
+        Para <strong>efeito de alto contraste</strong>
+        , entre na
+        <a href="https://chrome.google.com/webstore/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph?hl=pt-BR">página da ferramenta High Contrast</a>
+        e clique nos botões "GRATUITO" e, em seguida, "Adicionar". O ícone da ferramenta High Contrast aparecerá na barra de ferramentas do navegador. Clique nesse ícone para fazer a configuração desejada.
+      </li>
+      <li>
+        Para <strong>transformar em áudio um texto selecionado</strong>
+        , entre na
+        <a class="external-link" href="https://chrome.google.com/webstore/detail/selection-reader-text-to/fdffijlhedcdiblbingmagmdnokokgbi" target="_self" title="Leitor Selecção (Texto-Para-Voz)">página da ferramenta Leitor Selecção (Texto-para-voz)</a>
+        e clique nos botões "Usar no Chrome" e, em seguida, "Adicionar extensão". O ícone da ferramenta (um alto-falante) aparecerá na barra de ferramentas do navegador, e uma janela de configurações irá se abrir para que você faça os ajustes desejados.
+      </li>
+      <li>
+        Para <strong>escrever e editar textos por reconhecimento de voz</strong>
+        , entre na
+        <a class="external-link" href="https://chrome.google.com/webstore/detail/dictanote-speech-recogniz/aomjekmpappghadlogpigifkghlmebjk?hl=pt-BR" target="_self" title="Ferramenta Dictanote">página da ferramenta Dictanote&nbsp;</a>
+        e clique nos botões "USAR NO CHROME" e, em seguida, "Adicionar". O ícone da ferramenta Dictanote aparecerá na página de Aplicativos (Apps) do Google. Para fazer a configuração desejada, clique no ícone do Dictanote, entre no aplicativo, clique no ícone Settings, selecione Language Settings e Português do Brasil. Para que o aplicativo funcione, é necessário que seu computador tenha um microfone embutido ou que você o conecte a um microfone. Para ditar, é só clicar no ícone do microfone do Dictanote. O texto irá aparecendo à medida em que você for falando.
+      </li>
+    </ul>
+
+    </section>
+
+    <section id="contato">
+      <h1 class="titulo pt-4">Você pode falar conosco por diversos canais de contato</h1>
+      <ul class="list-inline">
+        <li class="list-inline-item"><strong>Via telefone / Whatsapp</strong></li>
+          <p>Através do número <strong>(11) 999999-9999</strong></p>
+          
+        <li class="list-inline-item"><strong>Através do e-mail</strong></li>
+          <p>Você pode nos contatar através do e-mail <a href="mailto:equipeupaa.f.morato@globomail.com">equipeupaa.f.morato@globomail.com</a> </p>
+        
+        <li class="list-inline-item"><strong>Através de nossas redes sociais</strong></li>
+          <p>Acesse nossas redes sociais clicando no icone correspondente abaixo:
+            <section class="fa-social">
+              <a href="www.facebook.com"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+          
+              <a href="www.instagram.com"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+            </section>
+
+        
+        <br>
+        <br>
+        <br>
+        
+        <li class="list-inline-item"><strong>Através do formulario de contato</strong></li> 
+        <form>
+          <div class="form-group col-md-6 offset-md-3">
+            <label for="exampleInputEmail1">Digite seu e-mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="campo para preenchimento de e-mail">
+            <small id="emailHelp" class="form-text text-muted">Nós nunca compartilhamos seus dados com terceiros.</small>
+          </div>
+          <div class="form-group col-md-6 offset-md-3">
+            <label for="exampleInputPassword1">Digite sua mensagem aqui</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>          
+          <button type="submit" class="btn btn-primary col-md-6 offset-md-3">Enviar mensagem</button>
+        </form>
+
+          
+      </ul>
+    </section>
+
+</main>
+
+<footer class="bg-secondary p-3">
+  <p class="text-light m-0 text-center">contato: <a class="text-light" href="mailto:equipeupaa.f.morato@globomail.com">equipeupaa.f.morato@globomail.com</a></p>
+  <p class="text-light m-0 text-center"><a class="text-light" href="/home/anderson/Área de Trabalho/UPAA/teste.html">Teste de API</a></p>
+
+  <script src=""></script>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="apoie-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Você pode ajudar a UPPA doando via PIX, adotando um PET ou apadrinhando. Caso queira entrar em contato conosco, preencha o formulario abaixo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Seu e-mail</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="seuemail@operador.com">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Digite sua mensagem</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Enviar mensagem</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>

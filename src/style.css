@@ -1,0 +1,34 @@
+.card-largura {
+    max-width: 18rem;
+}
+
+.titulo {
+    color: blue;
+    text-align: center;
+}
+
+.imagem-carrossel {
+    object-fit: cover;
+    object-position: 0 8%;
+    height: 290px;
+}
+
+.borda-cor-especial {
+    border-color: rgb(0, 9, 139);
+}
+
+.card-posicao-imagem {
+    object-fit: cover;
+    height: 200px;
+}
+
+.container-video {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+
+.fa-social {
+    height: 50px;
+    width: 50px;
+}
